@@ -1,0 +1,121 @@
+Python Programming Basics Document
+
+Python is a high-level, interpreted programming language. It is popular because it is easy to read, beginner-friendly, and widely used in software development, automation, data analysis, artificial intelligence, machine learning, web development, scripting, and backend development.
+
+Python files usually have the .py extension. A Python program can be executed using the python command in the terminal.
+
+Example:
+python app.py
+
+Variables:
+A variable is used to store data. In Python, you do not need to declare the data type manually.
+
+Example:
+name = "Arun"
+age = 28
+
+Data Types:
+Python has several common data types:
+1. int - used for whole numbers
+2. float - used for decimal numbers
+3. str - used for text
+4. bool - used for True or False values
+5. list - used to store multiple items in order
+6. tuple - used to store multiple items that cannot be changed
+7. dict - used to store key-value pairs
+8. set - used to store unique values
+
+List:
+A list is an ordered collection of items. Lists are mutable, which means we can change them after creation.
+
+Example:
+numbers = [10, 20, 30, 40]
+
+Dictionary:
+A dictionary stores data in key-value pairs.
+
+Example:
+student = {
+    "name": "Arun",
+    "course": "Python",
+    "level": "Beginner"
+}
+
+Conditional Statements:
+Conditional statements are used to make decisions in a program.
+
+Example:
+age = 18
+
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not eligible")
+
+Loops:
+Loops are used to repeat a block of code.
+
+For Loop Example:
+for number in [1, 2, 3, 4, 5]:
+    print(number)
+
+While Loop Example:
+count = 1
+
+while count <= 5:
+    print(count)
+    count = count + 1
+
+Functions:
+A function is a reusable block of code. It helps avoid repetition and makes code cleaner.
+
+Example:
+def greet(name):
+    return "Hello " + name
+
+result = greet("Arun")
+print(result)
+
+Modules:
+A module is a Python file that contains reusable code. Python also has built-in modules such as math, os, random, and datetime.
+
+Example:
+import math
+
+print(math.sqrt(16))
+
+File Handling:
+Python can read and write files.
+
+Example:
+with open("data.txt", "r") as file:
+    content = file.read()
+
+Exception Handling:
+Exception handling is used to handle errors without stopping the entire program.
+
+Example:
+try:
+    number = int("abc")
+except ValueError:
+    print("Invalid number")
+
+Object-Oriented Programming:
+Python supports object-oriented programming. A class is a blueprint, and an object is an instance of a class.
+
+Example:
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+student1 = Student("Arun")
+print(student1.name)
+
+Python in AI:
+Python is widely used in artificial intelligence and machine learning because it has many useful libraries such as NumPy, pandas, scikit-learn, TensorFlow, PyTorch, LangChain, ChromaDB, and OpenAI SDK.
+
+Python in RAG Applications:
+In Retrieval-Augmented Generation applications, Python is used to read documents, split text into chunks, create embeddings, store embeddings in vector databases like ChromaDB, retrieve relevant chunks, and send context to a language model for answering questions.
+
+Summary:
+Python is a beginner-friendly and powerful programming language. It is used in many fields including automation, backend development, data science, AI, machine learning, and RAG-based GenAI applications.
